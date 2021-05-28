@@ -57,8 +57,8 @@
       <div class="btn-group">
         <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'year'" ng-click="vm.cellIsOpen = false">Year</label>
         <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'month'" ng-click="vm.cellIsOpen = false">Month</label>
-        <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'week'" ng-click="vm.cellIsOpen = false">Week</label>
-        <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'day'" ng-click="vm.cellIsOpen = false">Day</label>
+        <!-- <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'week'" ng-click="vm.cellIsOpen = false">Week</label> -->
+        <!-- <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'day'" ng-click="vm.cellIsOpen = false">Day</label> -->
       </div>
     </div>
 
@@ -186,11 +186,7 @@
     </tbody>
 
   </table>
-  <script>
-    fetch('https://calendarific.com/api/v2/holidays?&api_key=96f8f6e15400fc7e2ac19f502c3a3726c6169dcb&country=US&year=2019')
-    .then(response => response.json())
-    .then(data => console.log(data));
-  </script>
+
 </div>
 
   </body>
