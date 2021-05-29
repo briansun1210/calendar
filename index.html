@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
     <script src="example.js"></script>
     <script src="helpers.js"></script>
+    <script src="country.js"></script>
   </head>
   <body>
     <div ng-controller="KitchenSinkCtrl as vm">
@@ -61,6 +62,21 @@
         <!-- <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'day'" ng-click="vm.cellIsOpen = false">Day</label> -->
       </div>
     </div>
+
+    <br class="visible-xs visible-sm">
+
+    <div class="col-md-6 text-center">
+      <div class="btn-group">
+        <!-- <label class="btn btn-primary">Country</label> -->
+        <form method = "post">
+          <input type = "checkbox" name = "country"><script>console.log(country())</script>
+         
+        </input>
+        </form>
+  
+      </div>
+    </div>
+
 
   </div>
 
